@@ -31,6 +31,7 @@ def main():
     sqft_per_gallon=350
     cost_per_gallon=25.0
     total_cost = get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon)
+    print(f"The total_cost variable is a {type(total_cost).__name__}.")
     print(f"The total cost of painting the room is: ${total_cost:.2f}")
 
 if __name__ == "__main__":
